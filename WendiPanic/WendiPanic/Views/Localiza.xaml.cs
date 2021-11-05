@@ -15,7 +15,13 @@ namespace WendiPanic.Views
                 MapSpan.FromCenterAndRadius(
                     new Position(37, -122), Distance.FromMiles(1)));
             */
-            _ = CurrentLocation();
+            
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            Task.Run(async () => await CurrentLocation());
         }
 
         public async Task CurrentLocation()

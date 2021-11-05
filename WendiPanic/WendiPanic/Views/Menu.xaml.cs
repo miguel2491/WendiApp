@@ -11,8 +11,8 @@ namespace WendiPanic.Views
     {
         public Menu()
         {
-            NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);            
             On<Android>().SetToolbarPlacement(ToolbarPlacement.Bottom);
         }
     }
