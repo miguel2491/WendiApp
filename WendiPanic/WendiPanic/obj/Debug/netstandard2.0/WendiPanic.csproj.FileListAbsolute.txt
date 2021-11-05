@@ -1,0 +1,15 @@
+C:\Users\Miguelin\source\repos\WendiPanic\WendiPanic\WendiPanic\bin\Debug\netstandard2.0\WendiPanic.deps.json
+C:\Users\Miguelin\source\repos\WendiPanic\WendiPanic\WendiPanic\bin\Debug\netstandard2.0\WendiPanic.dll
+C:\Users\Miguelin\source\repos\WendiPanic\WendiPanic\WendiPanic\bin\Debug\netstandard2.0\WendiPanic.pdb
+C:\Users\Miguelin\source\repos\WendiPanic\WendiPanic\WendiPanic\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Miguelin\source\repos\WendiPanic\WendiPanic\WendiPanic\obj\Debug\netstandard2.0\Views\Localiza.xaml.g.cs
+C:\Users\Miguelin\source\repos\WendiPanic\WendiPanic\WendiPanic\obj\Debug\netstandard2.0\Views\Login.xaml.g.cs
+C:\Users\Miguelin\source\repos\WendiPanic\WendiPanic\WendiPanic\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\Miguelin\source\repos\WendiPanic\WendiPanic\WendiPanic\obj\Debug\netstandard2.0\Views\Marca.xaml.g.cs
+C:\Users\Miguelin\source\repos\WendiPanic\WendiPanic\WendiPanic\obj\Debug\netstandard2.0\Views\Menu.xaml.g.cs
+C:\Users\Miguelin\source\repos\WendiPanic\WendiPanic\WendiPanic\obj\Debug\netstandard2.0\WendiPanic.AssemblyInfoInputs.cache
+C:\Users\Miguelin\source\repos\WendiPanic\WendiPanic\WendiPanic\obj\Debug\netstandard2.0\WendiPanic.AssemblyInfo.cs
+C:\Users\Miguelin\source\repos\WendiPanic\WendiPanic\WendiPanic\obj\Debug\netstandard2.0\WendiPanic.csproj.CoreCompileInputs.cache
+C:\Users\Miguelin\source\repos\WendiPanic\WendiPanic\WendiPanic\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Miguelin\source\repos\WendiPanic\WendiPanic\WendiPanic\obj\Debug\netstandard2.0\WendiPanic.dll
+C:\Users\Miguelin\source\repos\WendiPanic\WendiPanic\WendiPanic\obj\Debug\netstandard2.0\WendiPanic.pdb

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             BackgroundColor="#400101"
+             Icon="localiza.png"
+             x:Class="WendiPanic.Views.Localiza">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame HasShadow="True" Padding="3,60,3,3" BackgroundColor="Transparent" CornerRadius="20">
+                <maps:Map x:Name="Mapx" WidthRequest="100" HeightRequest="300" />
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="#400101"
+             Icon="llamada.png"
+             x:Class="WendiPanic.Views.Marca">
+    <ContentPage.Content>
+        <StackLayout Padding="5,0,5,0" VerticalOptions="Center">
+            <Image Source="ic_sindica.png" 
+                Aspect="AspectFill"
+                HeightRequest="150"
+                WidthRequest="150"
+                HorizontalOptions="Center" />
+            <Label
+                HorizontalOptions="Center"
+                Text="Mensaje"
+                TextColor="#DCF8C6"
+                x:Name="chaleco"
+                />
+            <Editor
+                Margin="40,10,40,10"
+                x:Name="Message"
+                Placeholder="Breve mensaje"
+                />
+            <StackLayout Margin="15,20,10,0">
+                <Label Text="CHALECA"
+                FontSize="20"
+                       HorizontalOptions="Center"
+                TextColor="#81e394" />
+                <Picker x:Name="Gender" 
+                        HorizontalOptions="FillAndExpand" 
+                        BackgroundColor="Transparent"
+                        TextColor="#F2B705"
+                        WidthRequest="80"
+                        >
+                    <Picker.Items>
+                        <x:String>Karen</x:String>
+                        <x:String>Galindo</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+            <Button Margin="80,10,80,10" Text="Llamar" TextColor="#730202" BackgroundColor="#F2762E" HeightRequest="50" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
