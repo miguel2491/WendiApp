@@ -117,7 +117,7 @@ public final class R {
 		public static final int common_open_on_phone = 0x7f0e0030;
 		public static final int common_signin_button_text = 0x7f0e0031;
 		public static final int common_signin_button_text_long = 0x7f0e0032;
-		public static final int fcm_fallback_notification_channel_label = 0x7f0e003c;
+		public static final int fcm_fallback_notification_channel_label = 0x7f0e003d;
 	}
 	public static final class styleable {
 		public static final int[] LoadingImageView = new int[] { 0x7f030099, 0x7f030154, 0x7f030155 };

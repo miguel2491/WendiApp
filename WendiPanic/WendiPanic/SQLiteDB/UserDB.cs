@@ -15,7 +15,6 @@ namespace WendiPanic.SQLiteDB
         {
             conn = DependencyService.Get<ISQLite>().GetConnection();
             conn.CreateTable<Usuario>();
-
         }
 
         public IEnumerable<Usuario> GetMembers()

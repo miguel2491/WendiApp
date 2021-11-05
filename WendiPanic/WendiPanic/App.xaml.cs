@@ -1,4 +1,5 @@
-﻿using WendiPanic.Services;
+﻿using System;
+using WendiPanic.Services;
 using WendiPanic.Splash;
 using Xamarin.Forms;
 
@@ -24,16 +25,19 @@ namespace WendiPanic
 
         protected override void OnStart()
         {
+            Console.WriteLine("Comienzo");
         }
 
         protected override void OnSleep()
         {
             //subscribee sound event
+            Console.WriteLine("Dormido");
 
         }
 
         protected override void OnResume()
         {
+            Console.WriteLine("Continuando");
         }
     }
 }

@@ -157,5 +157,13 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\wendys.mp3" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\string.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties TriggeredFromHotReload="False" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
