@@ -7,7 +7,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Frame HasShadow="True" Padding="3,60,3,3" BackgroundColor="Transparent" CornerRadius="20">
-                <maps:Map x:Name="Mapx" WidthRequest="100" HeightRequest="300" />
+                <maps:Map x:Name="Mapx" WidthRequest="100" HeightRequest="300" IsVisible="false"/>
             </Frame>
         </StackLayout>
     </ContentPage.Content>

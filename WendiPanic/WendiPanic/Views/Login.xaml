@@ -22,14 +22,14 @@
                 TextColor="#F2762E"
                 VerticalTextAlignment="Center"
                 HorizontalTextAlignment="Center"
-                x:Name="Email_login"
+                x:Name="usuario"
                 />
             <Entry
                 Margin="10,60,20,30"
                 Placeholder="PASSWORD"
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center"
-                x:Name="Pass"
+                x:Name="password"
                 TextColor="#F2762E"
                 PlaceholderColor="#F2762E"
                 IsPassword="True"/>

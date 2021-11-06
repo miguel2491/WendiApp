@@ -6,12 +6,18 @@ using Android.OS;
 using Android.Runtime;
 using Android.Util;
 using Firebase.Iid;
+using System;
+using System.Linq;
+using WendiPanic.Models;
+using WendiPanic.SQLiteDB;
 
 namespace WendiPanic.Droid
 {
     [Activity(Label = "WendiPanic", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
+        public Usuario user;
+        private UserDB userdb;
         const string TAG = "MainActivity";
 
         internal static readonly string CHANNEL_ID = "my_notification_channel";
@@ -32,7 +38,37 @@ namespace WendiPanic.Droid
 
             Log.Debug(TAG, "InstanceID token: " + FirebaseInstanceId.Instance.Token);
             var token = FirebaseInstanceId.Instance.Token;
-            Log.Debug(TAG, "Token: " + FirebaseInstanceId.Instance.Token);
+            //Add Token Local
+            //CONSULTAR BD
+            userdb = new UserDB();
+            var userW = new Usuario();
+            var user_exista = userdb.GetMembers().ToList();
+            var user_exist = userdb.GetMembers();
+            int RowCount = 0;
+            int usercount = user_exist.Count();
+            RowCount = Convert.ToInt32(usercount);
+            if (RowCount > 1)
+            {
+                userdb.DeleteMembers();
+                userW.token = token;
+                userW.status = 0;
+                userdb.AddMember(userW);
+            }
+            else if (RowCount == 1)
+            {
+                userdb.UpdateMemberToken(user_exista[0].id, token);
+            }
+            else
+            {
+                if (token == null || token == "")
+                {
+                    FinishAffinity();
+                }
+                userW.token = token;
+                userW.status = 0;
+                userdb.AddMember(userW);
+            }
+            //----------------------------------
         }
 
         public bool IsPlayServicesAvailable()

@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "MonoAndroid,Version=v11.0": {
+    "MonoAndroid,Version=v10.0": {
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
@@ -4153,7 +4153,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "MonoAndroid,Version=v11.0": [
+    "MonoAndroid,Version=v10.0": [
       "Newtonsoft.Json >= 13.0.1",
       "WendiPanic >= 1.0.0",
       "Xam.Plugin.Geolocator >= 4.5.0.6",
@@ -4171,47 +4171,46 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\EjeDesarrolloCS-165\\.nuget\\packages\\": {},
+    "C:\\Users\\KC\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EjeDesarrolloCS-165\\source\\WendiApp\\WendiPanic\\WendiPanic.Android\\WendiPanic.Android.csproj",
+      "projectUniqueName": "C:\\Users\\KC\\source\\WendiApp\\WendiPanic\\WendiPanic.Android\\WendiPanic.Android.csproj",
       "projectName": "WendiPanic.Android",
-      "projectPath": "C:\\Users\\EjeDesarrolloCS-165\\source\\WendiApp\\WendiPanic\\WendiPanic.Android\\WendiPanic.Android.csproj",
-      "packagesPath": "C:\\Users\\EjeDesarrolloCS-165\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\EjeDesarrolloCS-165\\source\\WendiApp\\WendiPanic\\WendiPanic.Android\\obj\\",
+      "projectPath": "C:\\Users\\KC\\source\\WendiApp\\WendiPanic\\WendiPanic.Android\\WendiPanic.Android.csproj",
+      "packagesPath": "C:\\Users\\KC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\KC\\source\\WendiApp\\WendiPanic\\WendiPanic.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\EjeDesarrolloCS-165\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\KC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "monoandroid11.0"
+        "monoandroid10.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\Public\\Documents\\Infragistics\\NuGet\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "monoandroid11.0": {
+        "monoandroid10.0": {
           "projectReferences": {
-            "C:\\Users\\EjeDesarrolloCS-165\\source\\WendiApp\\WendiPanic\\WendiPanic\\WendiPanic.csproj": {
-              "projectPath": "C:\\Users\\EjeDesarrolloCS-165\\source\\WendiApp\\WendiPanic\\WendiPanic\\WendiPanic.csproj"
+            "C:\\Users\\KC\\source\\WendiApp\\WendiPanic\\WendiPanic\\WendiPanic.csproj": {
+              "projectPath": "C:\\Users\\KC\\source\\WendiApp\\WendiPanic\\WendiPanic\\WendiPanic.csproj"
             }
           }
         }
       }
     },
     "frameworks": {
-      "monoandroid11.0": {
+      "monoandroid10.0": {
         "dependencies": {
           "Newtonsoft.Json": {
             "target": "Package",
@@ -4277,7 +4276,7 @@
       "message": "Se detectó una versión del paquete fuera de la restricción de dependencia: Xamarin.Android.Support.Media.Compat 26.0.2 requiere Xamarin.Android.Support.Compat (= 26.0.2), pero la versión Xamarin.Android.Support.Compat 28.0.0.3 ya se resolvió.",
       "libraryId": "Xamarin.Android.Support.Compat",
       "targetGraphs": [
-        "MonoAndroid,Version=v11.0"
+        "MonoAndroid,Version=v10.0"
       ]
     },
     {
@@ -4287,7 +4286,7 @@
       "message": "Degradación del paquete detectada: Xamarin.GooglePlayServices.Maps de 117.0.0 a 60.1142.1. Haga referencia al paquete directamente desde el proyecto para seleccionar una versión diferente. \r\n WendiPanic.Android -> Xamarin.Forms.Maps 5.0.0.2012 -> Xamarin.GooglePlayServices.Maps (>= 117.0.0) \r\n WendiPanic.Android -> Xamarin.GooglePlayServices.Maps (>= 60.1142.1)",
       "libraryId": "Xamarin.GooglePlayServices.Maps",
       "targetGraphs": [
-        "MonoAndroid,Version=v11.0"
+        "MonoAndroid,Version=v10.0"
       ]
     }
   ]
