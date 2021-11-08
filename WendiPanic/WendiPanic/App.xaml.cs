@@ -1,6 +1,7 @@
 ﻿using System;
 using WendiPanic.Services;
 using WendiPanic.Splash;
+using WendiPanic.Views;
 using Xamarin.Forms;
 
 namespace WendiPanic
@@ -15,7 +16,7 @@ namespace WendiPanic
             //subcribe here onRingalarm
             //msn.suscribe<dedonde,objetoquerecibo>("onRingAlaarm",OnRingAlarmExec());
             DependencyService.Register<MockDataStore>();
-            MainPage = new NavigationPage(new SplashScreen());
+            MainPage = new NavigationPage(new OAuth());
         }
 
         public void OnRingAlarmExec()

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="WendiPanic.Views.OAuth"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout Padding="30">
+            <Entry x:Name="userName" />
+
+            <Entry x:Name="password" IsPassword="True" />
+            <Button x:Name="oAuthBtn" Clicked="oAuthBtn_Clicked" />
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
