@@ -4,6 +4,7 @@ Plugin.CurrentActivity
 Plugin.Geolocator
 Plugin.Media
 Plugin.Permissions
+Plugin.Toast
 SQLitePCLRaw.lib.e_sqlite3.android
 Xamarin.AndroidX.Activity
 Xamarin.AndroidX.Annotation

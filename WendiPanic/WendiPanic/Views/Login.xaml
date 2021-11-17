@@ -22,7 +22,7 @@
                 TextColor="#F2762E"
                 VerticalTextAlignment="Center"
                 HorizontalTextAlignment="Center"
-                x:Name="usuario"
+                x:Name="username"
                 />
             <Entry
                 Margin="10,60,20,30"
@@ -33,6 +33,14 @@
                 TextColor="#F2762E"
                 PlaceholderColor="#F2762E"
                 IsPassword="True"/>
+            <StackLayout Margin="30,20,30,40">
+                <Label
+                    x:Name="Errormsn"
+                    IsVisible="False"
+                    TextColor="red"
+                    HorizontalTextAlignment="Center"
+                    />
+            </StackLayout>
             <StackLayout>
                 <Button 
                     Margin="10,5,10,10"

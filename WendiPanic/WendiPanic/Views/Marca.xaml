@@ -23,23 +23,16 @@
                 Placeholder="Breve mensaje"
                 />
             <StackLayout Margin="15,20,10,0">
-                <Label Text="CHALECA"
-                FontSize="20"
-                       HorizontalOptions="Center"
-                TextColor="#81e394" />
                 <Picker x:Name="Gender" 
-                        HorizontalOptions="FillAndExpand" 
+                        Title="Seleccionar"
+                        HorizontalTextAlignment="Center"
                         BackgroundColor="Transparent"
                         TextColor="#F2B705"
-                        WidthRequest="80"
+                        WidthRequest="50"
                         >
-                    <Picker.Items>
-                        <x:String>Karen</x:String>
-                        <x:String>Galindo</x:String>
-                    </Picker.Items>
                 </Picker>
             </StackLayout>
-            <Button Margin="80,10,80,10" Text="Llamar" TextColor="#730202" BackgroundColor="#F2762E" HeightRequest="50" />
+            <Button Margin="80,10,80,10" Text="Llamar" TextColor="#730202" BackgroundColor="#F2762E" HeightRequest="50" x:Name="btnCall" Clicked="btnCall_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

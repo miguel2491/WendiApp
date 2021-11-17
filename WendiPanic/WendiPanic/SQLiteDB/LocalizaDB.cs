@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using WendiPanic.Models;
 using Xamarin.Forms;
 
@@ -15,16 +14,16 @@ namespace WendiPanic.SQLiteDB
         public LocalizaDB()
         {
             conn = DependencyService.Get<ISQLite>().GetConnection();
-            conn.CreateTable<Localiza>();
+            conn.CreateTable<LocalizaModel>();
         }
 
-        public IEnumerable<Localiza> GetPuntos()
+        public IEnumerable<LocalizaModel> GetPuntos()
         {
-            var members = (from mem in conn.Table<Localiza>() select mem);
+            var members = (from mem in conn.Table<LocalizaModel>() select mem);
             return members.ToList();
         }
 
-        public string AddPos(Localiza member)
+        public string AddPos(LocalizaModel member)
         {
             try
             {
@@ -39,11 +38,11 @@ namespace WendiPanic.SQLiteDB
 
         public void DeletePunto(int ID)
         {
-            conn.Delete<Localiza>(ID);
+            conn.Delete<LocalizaModel>(ID);
         }
         public void DeleteRutas()
         {
-            conn.DeleteAll<Localiza>();
+            conn.DeleteAll<LocalizaModel>();
         }
         //--------------------------------------------------------------------------------
     }

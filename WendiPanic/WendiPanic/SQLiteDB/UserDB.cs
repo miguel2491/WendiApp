@@ -39,7 +39,7 @@ namespace WendiPanic.SQLiteDB
 
         }
 
-        public string UpdateMember(int id, string username, int status)
+        public string UpdateMember(int id, int id_user, string nombre, string username, string pass, string rol, int status)
         {
             try
             {
@@ -50,8 +50,11 @@ namespace WendiPanic.SQLiteDB
                           select values).Single();
                 if (true)
                 {
-                    d1.id = id;
+                    d1.id_user = id_user;
+                    d1.nombre = nombre;
                     d1.username = username;
+                    d1.password = pass;
+                    d1.rol = rol;
                     d1.status = status;
                     conn.Update(d1);
                     res = "Correcto";

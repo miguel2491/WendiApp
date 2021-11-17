@@ -1,4 +1,5 @@
 ﻿
+using Android;
 using Android.App;
 using Android.Content.PM;
 using Android.Gms.Common;
@@ -132,5 +133,32 @@ namespace WendiPanic.Droid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
+        const int RequestLocationId = 0;
+
+        readonly string[] LocationPermissions =
+        {
+            Manifest.Permission.AccessCoarseLocation,
+            Manifest.Permission.AccessFineLocation
+        };
+
+        protected override void OnStart()
+        {
+            base.OnStart();
+            base.OnStart();
+
+            if ((int)Build.VERSION.SdkInt >= 23)
+            {
+                if (CheckSelfPermission(Manifest.Permission.AccessFineLocation) != Permission.Granted)
+                {
+                    RequestPermissions(LocationPermissions, RequestLocationId);
+                }
+                else
+                {
+                    // Permissions already granted - display a message.
+                }
+            }
+        }
+        //-----------------------------
     }
 }

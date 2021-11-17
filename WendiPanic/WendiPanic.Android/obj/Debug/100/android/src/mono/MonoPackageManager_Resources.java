@@ -11,6 +11,8 @@ public class MonoPackageManager_Resources {
 		"Plugin.Geolocator.dll",
 		"Plugin.Media.dll",
 		"Plugin.Permissions.dll",
+		"Plugin.Toast.Abstractions.dll",
+		"Plugin.Toast.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
 		"SQLitePCLRaw.core.dll",

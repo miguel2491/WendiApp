@@ -6,6 +6,7 @@ namespace WendiPanic.Models
     {
         [PrimaryKey, AutoIncrement]
         public int id { set; get; }
+        public int id_user { set; get; }
         public string nombre { set; get; }
         public string username { set; get; }
         public string password { set; get; }
